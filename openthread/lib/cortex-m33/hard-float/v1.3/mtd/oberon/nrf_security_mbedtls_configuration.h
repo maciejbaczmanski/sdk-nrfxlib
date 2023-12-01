@@ -1486,7 +1486,7 @@
  *
  * Comment this macro to disable support for DTLS
  */
-#define MBEDTLS_SSL_PROTO_DTLS
+/* #undef MBEDTLS_SSL_PROTO_DTLS */
 
 /**
  * \def MBEDTLS_SSL_ALPN
@@ -1510,7 +1510,7 @@
  *
  * Comment this to disable anti-replay in DTLS.
  */
-#define MBEDTLS_SSL_DTLS_ANTI_REPLAY
+/* #undef MBEDTLS_SSL_DTLS_ANTI_REPLAY */
 
 /**
  * \def MBEDTLS_SSL_DTLS_HELLO_VERIFY
@@ -1528,7 +1528,7 @@
  *
  * Comment this to disable support for HelloVerifyRequest.
  */
-#define MBEDTLS_SSL_DTLS_HELLO_VERIFY
+/* #undef MBEDTLS_SSL_DTLS_HELLO_VERIFY */
 
 /**
  * \def MBEDTLS_SSL_DTLS_SRTP
@@ -2804,7 +2804,7 @@
  *
  * This module is required for SSL/TLS client support.
  */
-#define MBEDTLS_SSL_CLI_C
+/* #undef MBEDTLS_SSL_CLI_C */
 
 /**
  * \def MBEDTLS_SSL_SRV_C
@@ -2834,7 +2834,7 @@
  *
  * This module is required for SSL/TLS.
  */
-#define MBEDTLS_SSL_TLS_C
+/* #undef MBEDTLS_SSL_TLS_C */
 
 /**
  * \def MBEDTLS_THREADING_C
@@ -3091,7 +3091,7 @@ it is (2^48 - 1), our restriction is :  (int - 0xFFFF - 0xF).*/
  * If this option is unset, the library will fall back to a default value of
  * 32 keys.
  */
-//#define MBEDTLS_PSA_KEY_SLOT_COUNT 32
+/* #undef MBEDTLS_PSA_KEY_SLOT_COUNT */
 
 /* SSL Cache options */
 //#define MBEDTLS_SSL_CACHE_DEFAULT_TIMEOUT       86400 /**< 1 day  */
